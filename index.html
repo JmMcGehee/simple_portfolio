@@ -8,23 +8,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8545e1c2d0.js" crossorigin="anonymous"></script>
   <title>Joshua McGehee</title>
 </head>
 <body>
   <section class="hero">
     <nav>
       <img src="src/images/logo.png" alt="bike cog logo" class="logo">
-      <ul>
-        <li>About me</li>
-        <li>Projects</li>
-        <li>Contact me</li>
+      <ul id="nav-list">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Work examples</a></li>
+        <li><a href="#contact-me">Contact me</a></li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <div class="hero-area">
       <div class="hero-text">
         <h1>Joshua McGehee</h1>
         <p>Web Developer</p>
-        <div class="button">About me</div>
+        <div class="button" id="about-me-button">About me</div>
       </div>
       <div class="socials">
         <div>
@@ -39,23 +43,23 @@
       </div>
     </div>
   </section>
-  <section class="sub-section">
+  <section class="sub-section" id="about-me">
     <div class="information">
       <h2>About Me</h2>
-      <p>Hello. My name is Joshua McGehee. I am a Software Developer with a passion the Outdoors, Sustainability, Learning, and Civic Envolvement. I moved to Colorado to create a career and life I love, and after a career in sales I took up Software Engineering. My focus is in web technologies and javascript libraries and APIs.</p>
+      <p>Hello. My name is Joshua McGehee. I am a Software Developer with a passion for the Outdoors, Sustainability, Learning, and Civic Envolvement. I moved to Colorado to create a career and life I love, and after a career in sales I took up Software Engineering. My focus is in web technologies and javascript libraries and APIs.</p>
     </div>
     <div class="headshot-container">
       <img src="src/images/headshot.jpg" alt="Joshua McGehee headshot" class="headshot">
     </div>
   </section>
-  <section class="sub-section-alternative">
-    <h2>Projects</h2>
+  <section class="sub-section-alternative" id="projects">
+    <h2>Work examples</h2>
     <div class="project-container">
 
       <div class="project-card">
         <img class="project-image" src="src/images/project-one.png" alt="project image">
-        <h3>Project One</h3>
-        <p class="subtext">This is my project and some text about it. I enjoyed making this project</p>
+        <h3>Live Green Outdoors</h3>
+        <p class="subtext">This app uses city data from Chicago to plot points of outdoor interest and transit lines on a Google Map. My first use of APIs.</p>
         <hr>
         <p class="subtext"><a class="project-link" href="https://jmmcgehee.github.io/LiveGreenOutdoorsChicago/" target="_blank">View here</a></p>
       </div>
@@ -83,10 +87,18 @@
         <hr>
         <p class="subtext"><a class="project-link" href="https://jmmcgehee.github.io/LiveGreenOutdoorsChicago/" target="_blank">View here</a></p>
       </div>
-      
+
     </div>
   </section>
-  <footer></footer>
+  <footer id="contact-me">
+    <h2>Contact me</h2>
+    <form action="https://formsubmit.co/mcgehee.joshua@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Professional Contact">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="message" placeholder="Write your message here" required>
+      <button class="button" type="submit">Send</button>
+    </form>
+  </footer>
 
   <script src="src/app.js"></script>
 </body>
