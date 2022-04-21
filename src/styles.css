@@ -58,6 +58,10 @@ p {
   font-weight: 300;
 }
 
+.information > p {
+  padding: 15px 0px;
+}
+
 .subtext {
   font-size: 15px;
   font-weight: 300;
