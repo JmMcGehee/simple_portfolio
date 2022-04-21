@@ -61,6 +61,7 @@ p {
 .subtext {
   font-size: 15px;
   font-weight: 300;
+  padding: 0px 10px;
 }
 
 .hero-area {
@@ -163,7 +164,8 @@ p {
 
 .project-image {
   margin-top: 25px; 
-  width: 250px;
+  height: 200px;
+  max-width: 200px;
   border-radius: 150px;
 }
 
