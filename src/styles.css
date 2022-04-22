@@ -156,7 +156,7 @@ p {
 
 .project-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .project-card {
@@ -171,6 +171,7 @@ p {
   height: 200px;
   max-width: 200px;
   border-radius: 150px;
+  object-fit: cover;
 }
 
 hr {
@@ -203,6 +204,13 @@ input {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+@media (max-width: 1400px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1100px){
