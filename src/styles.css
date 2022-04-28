@@ -172,6 +172,7 @@ p {
   max-width: 200px;
   border-radius: 150px;
   object-fit: cover;
+  border: 1px solid #cbcbe58a;
 }
 
 hr {
